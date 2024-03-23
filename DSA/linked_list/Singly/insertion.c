@@ -80,13 +80,16 @@ int main()
   struct node *head;
   struct node *secound;
   struct node *third;
+  struct node *p1;
+
   // initializing memory to node from heap;
-  head = (struct node *)malloc(sizeof(struct node));
+  p1 = (struct node *)malloc(sizeof(struct node));
   secound = (struct node *)malloc(sizeof(struct node));
   third = (struct node *)malloc(sizeof(struct node));
   // assigining values to node;
-  head->data = 1;
-  head->next = secound;
+  head = p1;
+  p1->data = 1;
+  p1->next = secound;
 
   secound->data = 2;
   secound->next = third;
@@ -98,9 +101,9 @@ int main()
   printf("\n before insertion\n");
   display(head);
   // head = insertionAtBegining(head,5);
-  // insertionAtEnd(head,5);
+  insertionAtEnd(head,5);
   // insertionAfterNode(head,secound,5);
-  insertionAtIndex(head,1,5);
+  // insertionAtIndex(head,1,5);
 
   printf("\n after insertion\n");
   display(head);

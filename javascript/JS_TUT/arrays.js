@@ -33,7 +33,7 @@ let b = [1,2,3,4,55,6]
 // let z = b.splice(2,3,101,102,103,104,105,106) // returns the array of deleted items// it means :- start from index 2(included) delete 3 items(it means3,4,55) and after index 2 (incuded) add (101,102,103,104,105,106)
 // console.log(b);
 // let tepm = b.slice(2,4) // returns a sub array :- slice(from(included)  to(excluded))
-console.log(tepm);
+console.log(b);
 // console.log(z)
 
 
