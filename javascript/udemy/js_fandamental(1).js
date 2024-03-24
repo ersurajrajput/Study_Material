@@ -7,23 +7,6 @@ var:- jus like the let but used in older js
 */}
 
 
-
-{/*****************************BASIC OPERATOR************************* 
-
-refer w3 school or mdn for types of operators
-
-
-
-
-*/}
-
-
-{/*****************************OPERTOR PRACIDENCE************************* 
-
- refer mdn documnetetion
-
-*/}
-
 {/*****************************Tring and Tamplate Listrales************************* 
 let Uname = "suraj";
 let age = 21;
@@ -52,3 +35,12 @@ Falsy :- 0, '', NaN, undefined, false     (only these five)
 truthly :-- except the falsy all the values are truthly values.
 
 */}
+
+{/*****************************== vs ===************************* 
+== :- only compares the value
+=== :- value + data type as well.
+
+
+*/}
+
+
