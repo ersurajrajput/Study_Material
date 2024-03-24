@@ -25,15 +25,30 @@ refer w3 school or mdn for types of operators
 */}
 
 {/*****************************Tring and Tamplate Listrales************************* 
+let Uname = "suraj";
+let age = 21;
+let details = `my name is  ${Uname} and my age is ${age} `; // templte litral
 
+console.log(details);
+console.log(`my name is 
+suraj singh rajput
+and i am from mathura
+currently i am studying in btech`);
 
 
 */}
 
 
 
-{/*****************************OPERTOR PRACIDENCE************************* 
+{/*****************************Type Conversion vs Type Coersion************************* 
+conversion :--- when we manually convert the data type.
+Coersion :----  when js automaticlly converts the data type
 
 
+*/}
+
+{/*****************************Truthly vs Falsy************************* 
+Falsy :- 0, '', NaN, undefined, false     (only these five)
+truthly :-- except the falsy all the values are truthly values.
 
 */}
