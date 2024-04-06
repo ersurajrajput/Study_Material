@@ -1,1 +1,0 @@
-// implement linear and binary search algorithm

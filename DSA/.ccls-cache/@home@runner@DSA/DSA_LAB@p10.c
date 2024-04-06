@@ -1,1 +1,0 @@
-// write a c program to delete a element from a linked list
