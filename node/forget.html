@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    form {
+      width: 300px;
+      margin: 0 auto;
+    }
+    input[type="email"],
+    input[type="text"],
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    .otp-field {
+      display: none;
+    }
+  </style>
+  <script>
+    function showOTPField() {
+      document.getElementById("otp-field").style.display = "block";
+    }
+  </script>
+</head>
+<body>
+  <form action="" method="post">
+    <h2>Forgot Password</h2>
+    <p>Please enter your email address to reset your password.</p>
+    <input type="email" name="email" id="email" placeholder="Email" required>
+    <input type="submit" value="Request OTP" onclick="showOTPField()">
+    <div class="otp-field" id="otp-field">
+      <p>An OTP has been sent to your email. Please enter it below.</p>
+      <input type="text" name="otp" id="otp" placeholder="OTP" required>
+      <input type="submit" value="Submit OTP">
+    </div>
+  </form>
+</body>
+<script>
+    var nodemailer = require('nodemailer');
+// Function to generate OTP 
+
+
+	// Declare a digits variable 
+	// which stores all digits 
+	let digits = '0123456789'; 
+	let OTP = ''; 
+	let len = digits.length 
+	for (let i = 0; i < 4; i++) { 
+		OTP += digits[Math.floor(Math.random() * len)]; 
+	} 
+ 
+
+
+console.log("OTP of 4 digits: ") 
+console.log(OTP);
+
+
+
+
+var transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: 'suraj.rajput2023@glbajajgroup.org',
+    pass: '#GLAp9dhxr#'
+  }
+});
+
+var mailOptions = {
+  from: 'suraj.rajput2023@glbajajgroup.org',
+  to: 'surajrajput7668@gmail.com',
+  subject: 'Sending Email using Node.js',
+  text: `your OTP is ${OTP}`
+};
+
+transporter.sendMail(mailOptions, function(error, info){
+  if (error) {
+    console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  }
+});
+</script>
+</html>
