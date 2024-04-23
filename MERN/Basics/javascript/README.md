@@ -1,2 +1,0 @@
-Some javascript projects
-test
