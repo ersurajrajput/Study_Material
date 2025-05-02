@@ -23,8 +23,14 @@ Stores key-value pairs, and is not a subtype of Collection.
 🔸 Examples: HashMap, TreeMap
 
 🔸 🔸 🔸 🔸 🔸 🔸 🔸 🔸 🔸 🔸 🔸 List:🔸 🔸 🔸 🔸 🔸 🔸 🔸 
-🔸 ArrayList:-
-    internal working same as array.
-    when array is full new array is created (big size) and the elements of old array is copied in new array
-    default size of initial array is 10.
-    internal working same as array.
+🔸 🔸 🔸 ArrayList:-
+        internal working same as array.
+        when array is full new array is created (big size) and the elements of old array is copied in new array
+        default size of initial array is 10.
+        internal working same as array.
+        growth factor is 1.5 (so if old array is 10. then new array will be 15)
+    🔸 🔸Adding:-
+            checks if has enough space or not. if not then create new array
+            Time complexity O(n)
+     🔸 🔸Removing:-   
+            removes element and then shifts other elements
