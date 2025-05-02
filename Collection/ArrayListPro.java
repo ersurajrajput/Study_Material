@@ -6,15 +6,10 @@ public static void main(String[] args) {
 
     Stack<Integer> st = new Stack<>();
     Stack<Integer> st1 = new Stack<>();
-    st.add(1);
-    st.add(2);
-    st.add(3);
-    st.add(4);
-    st.add(5);
-    st.add(6);
-    st1.addAll(st.reversed());
+    List<Integer> l = new ArrayList<>( 100 );
+    l.add(1);
 
-    System.out.println(st);
+    System.out.println(l.size());
     System.out.println(st1);
 
 
